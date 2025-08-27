@@ -10,7 +10,7 @@ let persons = ["ali", "reza", "amir", "arash"];
   console.log(`Hello ${person} ${index}`);
 });*/
 
-let numbers = [1, 2, 3, 4];
+//let numbers = [1, 2, 3, 4];
 
 /*numbers.forEach(function (number, index, array) {
   array[index] = number * 2;
@@ -32,3 +32,18 @@ users.forEach(function(user) {
 function sendWellcome(email) {
     //console.log(`we send wellcome email to ${email}`)
 }
+
+//map
+/*
+let newArray = array.map(function(currentValue, index, array) {
+   return newValue
+})
+   */
+
+let numbers = [1, 2, 3, 4];
+
+let doubleNumber = numbers.map(function(number) {
+    return number*2
+})
+console.log('doubleNumber', doubleNumber)
+console.log('numbers', numbers)
