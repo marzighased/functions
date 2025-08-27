@@ -80,8 +80,18 @@ let resultNumber = numbers.filter(function (number) {
 //console.log(resultNumber)
 //console.log(numbers)
 
-let evenNumber = numbers.filter(function(number){
-    return number % 2 === 0
+let evenNumber = numbers.filter(function (number) {
+  return number % 2 === 0;
+});
+//console.log(evenNumber)
+//console.log(numbers)
+
+let products = [
+  { name: "laptop", price: 1000 },
+  { name: "phone", price: 400 },
+  { name: "tablet", price: 300 },
+];
+let resultProduct = products.filter(function(product) {
+    return product.price > 350
 })
-console.log(evenNumber)
-console.log(numbers)
+console.log(resultProduct)
