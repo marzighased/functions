@@ -77,5 +77,11 @@ let numbers = [10, 1, 8, 2, 9, 14];
 let resultNumber = numbers.filter(function (number) {
   return number > 5;
 });
-console.log(resultNumber)
+//console.log(resultNumber)
+//console.log(numbers)
+
+let evenNumber = numbers.filter(function(number){
+    return number % 2 === 0
+})
+console.log(evenNumber)
 console.log(numbers)
