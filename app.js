@@ -98,7 +98,28 @@ let resultProduct = products.filter(function (product) {
 
 let names = ["tom", "jack", "jonas", "jorg"];
 
-let resultName = names.filter(function(name) {
-    return name.length > 3
+let resultName = names.filter(function (name) {
+  return name.length > 3;
+});
+//console.log(resultName)
+
+
+let mixedArray = [1, "hello", undefined, 3, "world", null];
+
+let numberOnly = mixedArray.filter(function (item) {
+    return typeof item === 'number'
+});
+//console.log(numberOnly)
+
+let users = [
+  { id: 1, name: "sara", email: "sara@gmail.com", active: true },
+  { id: 2, name: "tina", email: "tina@gmail.com", active: false },
+  { id: 3, name: "mary", email: "mary@gmail.com", active: true },
+  { id: 4, name: "mina", email: "mina@gmail.com", active: false }
+];
+let activeUsers = users.filter(function(user){
+    return user.active === true   
+    //     user.active
 })
-console.log(resultName)
+console.log(activeUsers)
+
