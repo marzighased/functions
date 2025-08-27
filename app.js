@@ -58,4 +58,10 @@ let users = [
 let userNames = users.map(function(user) {
     return user.name
 })
-console.log(userNames)
+//console.log(userNames)
+
+let stringNumbers = numbers.map(function(num) {
+    return num.toString()
+})
+console.log(stringNumbers)
+console.log(numbers)
