@@ -91,7 +91,14 @@ let products = [
   { name: "phone", price: 400 },
   { name: "tablet", price: 300 },
 ];
-let resultProduct = products.filter(function(product) {
-    return product.price > 350
+let resultProduct = products.filter(function (product) {
+  return product.price > 350;
+});
+//console.log(resultProduct)
+
+let names = ["tom", "jack", "jonas", "jorg"];
+
+let resultName = names.filter(function(name) {
+    return name.length > 3
 })
-console.log(resultProduct)
+console.log(resultName)
