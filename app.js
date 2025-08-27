@@ -40,28 +40,42 @@ let newArray = array.map(function(currentValue, index, array) {
 })
    */
 
-let numbers = [1, 2, 3, 4];
+//let numbers = [1, 2, 3, 4];
 
-let doubleNumber = numbers.map(function(number) {
-    return number*2
-})
+/*let doubleNumber = numbers.map(function (number) {
+  return number * 2;
+});
 //console.log('doubleNumber', doubleNumber)
 //console.log('numbers', numbers)
 
 let users = [
-    { id: 1, name: "sara", email: "sara@gmail.com" },
-    { id: 2, name: "tina", email: "tina@gmail.com" },
-    { id: 3, name: "mary", email: "mary@gmail.com" },
-    { id: 4, name: "mina", email: "mina@gmail.com" }
+  { id: 1, name: "sara", email: "sara@gmail.com" },
+  { id: 2, name: "tina", email: "tina@gmail.com" },
+  { id: 3, name: "mary", email: "mary@gmail.com" },
+  { id: 4, name: "mina", email: "mina@gmail.com" },
 ];
 
-let userNames = users.map(function(user) {
-    return user.name
-})
+let userNames = users.map(function (user) {
+  return user.name;
+});
 //console.log(userNames)
 
-let stringNumbers = numbers.map(function(num) {
-    return num.toString()
+let stringNumbers = numbers.map(function (num) {
+  return num.toString();
+});
+//console.log(stringNumbers)
+//console.log(numbers)
+
+//filter
+/*
+let newArray = Array.filter(function(currentValue,index,array) {
+    return condition
 })
-console.log(stringNumbers)
+*/
+
+let numbers = [10, 1, 8, 2, 9, 14];
+let resultNumber = numbers.filter(function (number) {
+  return number > 5;
+});
+console.log(resultNumber)
 console.log(numbers)
