@@ -150,4 +150,23 @@ const numbers = [2, 3, 1, 4];
 let result = numbers.reduce((accu,number) => {
   return number + accu
 },0)
-console.log(result)
+//console.log(result)
+
+
+
+let multiple = numbers.reduce((accu,number)=>{
+   return accu * number
+},1)
+console.log(multiple)
+
+
+let products = [
+  { name: "laptop", price: 1000 },
+  { name: "phone", price: 400 },
+  { name: "tablet", price: 300 },
+];
+
+let totalPrice = products.reduce((accu,product)=> {
+   return accu += product.price
+}, 0)
+console.log(totalPrice)
