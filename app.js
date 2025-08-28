@@ -161,12 +161,17 @@ console.log(multiple)
 
 
 let products = [
-  { name: "laptop", price: 1000 },
-  { name: "phone", price: 400 },
-  { name: "tablet", price: 300 },
+  { name: "laptop", price: 1000, quentity:2},
+  { name: "phone", price: 400,   quentity:3},
+  { name: "tablet", price: 300,  quentity:4}
 ];
-
+/*
 let totalPrice = products.reduce((accu,product)=> {
    return accu += product.price
+}, 0)
+console.log(totalPrice)
+*/
+let totalPrice = products.reduce((accu,product)=> {
+   return accu += (product.quentity * product.price)
 }, 0)
 console.log(totalPrice)
