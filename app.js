@@ -73,8 +73,8 @@ let newArray = Array.filter(function(currentValue,index,array) {
 })
 */
 
-let numbers = [10, 1, 8, 2, 9, 14];
-let resultNumber = numbers.filter(function (number) {
+//let numbers = [10, 1, 8, 2, 9, 14];
+/*let resultNumber = numbers.filter(function (number) {
   return number > 5;
 });
 //console.log(resultNumber)
@@ -121,5 +121,19 @@ let activeUsers = users.filter(function(user){
     return user.active === true   
     //     user.active
 })
-console.log(activeUsers)
+//console.log(activeUsers)
+
+//find
+
+/*
+let result = Array.filter(function(currentValue,index,array) {
+    return condition
+})
+*/
+let numbers = [1, 4, 2, 10, 9, 14];
+
+let result = numbers.find(function(number) {
+    return number > 5
+})
+console.log(result)
 
