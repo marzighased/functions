@@ -130,10 +130,24 @@ let result = Array.filter(function(currentValue,index,array) {
     return condition
 })
 */
-let numbers = [1, 4, 2, 10, 9, 14];
+/*let numbers = [1, 4, 2, 10, 9, 14];
 
 let result = numbers.find(function(number) {
     return number > 5
 })
 console.log(result)
+*/
 
+//reduce
+/*
+let result = Array.reduce(function(accumulator,currentValue,currentIndex,array) {
+    return
+,initial value)
+*/
+
+const numbers = [2, 3, 1, 4];
+
+let result = numbers.reduce((accu,number) => {
+  return number + accu
+},0)
+console.log(result)
