@@ -185,7 +185,9 @@ const person = {
         console.log(`Hello ${this.name}`)
     },
     calcAge: function () {
-        return 2025 - this.birthYear
+        //return 2025 - this.birthYear
+        this.age = 2025 - this.birthYear
+        return this.age
     }    
 }
 person.greet()
