@@ -157,7 +157,7 @@ let result = numbers.reduce((accu,number) => {
 let multiple = numbers.reduce((accu,number)=>{
    return accu * number
 },1)
-console.log(multiple)
+//console.log(multiple)
 
 
 let products = [
@@ -174,4 +174,14 @@ console.log(totalPrice)
 let totalPrice = products.reduce((accu,product)=> {
    return accu += (product.quentity * product.price)
 }, 0)
-console.log(totalPrice)
+//console.log(totalPrice)
+
+//this
+
+const person = {
+    name:'marzi',
+    greet: function () {
+        console.log(`Hello ${this.name}`)
+    }
+}
+person.greet()
