@@ -181,6 +181,7 @@ let totalPrice = products.reduce((accu,product)=> {
 const person = {
     name:'marzi',
     birthYear: 1990,
+    drivingLicence: true,
     greet: function () {
         console.log(`Hello ${this.name}`)
     },
@@ -188,7 +189,11 @@ const person = {
         //return 2025 - this.birthYear
         this.age = 2025 - this.birthYear
         return this.age
+    },
+    getSummary: function () {
+        return `I'm ${this.name}, ${this.age} years old, i have ${this.drivingLicence ? 'a' : 'not'} driving Licence.`
     }    
 }
 person.greet()
 console.log(person.calcAge())
+console.log(person.getSummary())
